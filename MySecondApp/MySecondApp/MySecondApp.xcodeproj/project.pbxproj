@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		929587371A63CC1E00448322 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 929587361A63CC1E00448322 /* MapKit.framework */; };
 		92AC6C851A63BB9C0049C27D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92AC6C841A63BB9C0049C27D /* main.m */; };
 		92AC6C881A63BB9C0049C27D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92AC6C871A63BB9C0049C27D /* AppDelegate.m */; };
 		92AC6C8B1A63BB9C0049C27D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92AC6C8A1A63BB9C0049C27D /* ViewController.m */; };
@@ -14,6 +15,8 @@
 		92AC6C901A63BB9C0049C27D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92AC6C8F1A63BB9C0049C27D /* Images.xcassets */; };
 		92AC6C931A63BB9C0049C27D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92AC6C911A63BB9C0049C27D /* LaunchScreen.xib */; };
 		92AC6C9F1A63BB9C0049C27D /* MySecondAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92AC6C9E1A63BB9C0049C27D /* MySecondAppTests.m */; };
+		92AC6CDC1A63C8650049C27D /* b71fa732.png in Resources */ = {isa = PBXBuildFile; fileRef = 92AC6CDA1A63C8650049C27D /* b71fa732.png */; };
+		92AC6CDD1A63C8650049C27D /* 1305_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92AC6CDB1A63C8650049C27D /* 1305_3.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		929587361A63CC1E00448322 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		92AC6C7F1A63BB9C0049C27D /* MySecondApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySecondApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92AC6C831A63BB9C0049C27D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92AC6C841A63BB9C0049C27D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +44,8 @@
 		92AC6C981A63BB9C0049C27D /* MySecondAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySecondAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92AC6C9D1A63BB9C0049C27D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92AC6C9E1A63BB9C0049C27D /* MySecondAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySecondAppTests.m; sourceTree = "<group>"; };
+		92AC6CDA1A63C8650049C27D /* b71fa732.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = b71fa732.png; sourceTree = "<group>"; };
+		92AC6CDB1A63C8650049C27D /* 1305_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1305_3.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				929587371A63CC1E00448322 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +70,7 @@
 		92AC6C761A63BB9C0049C27D = {
 			isa = PBXGroup;
 			children = (
+				929587361A63CC1E00448322 /* MapKit.framework */,
 				92AC6C811A63BB9C0049C27D /* MySecondApp */,
 				92AC6C9B1A63BB9C0049C27D /* MySecondAppTests */,
 				92AC6C801A63BB9C0049C27D /* Products */,
@@ -81,6 +89,8 @@
 		92AC6C811A63BB9C0049C27D /* MySecondApp */ = {
 			isa = PBXGroup;
 			children = (
+				92AC6CDA1A63C8650049C27D /* b71fa732.png */,
+				92AC6CDB1A63C8650049C27D /* 1305_3.jpg */,
 				92AC6C861A63BB9C0049C27D /* AppDelegate.h */,
 				92AC6C871A63BB9C0049C27D /* AppDelegate.m */,
 				92AC6C891A63BB9C0049C27D /* ViewController.h */,
@@ -168,6 +178,11 @@
 				TargetAttributes = {
 					92AC6C7E1A63BB9C0049C27D = {
 						CreatedOnToolsVersion = 6.1.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					92AC6C971A63BB9C0049C27D = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -199,8 +214,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92AC6CDC1A63C8650049C27D /* b71fa732.png in Resources */,
 				92AC6C8E1A63BB9C0049C27D /* Main.storyboard in Resources */,
 				92AC6C931A63BB9C0049C27D /* LaunchScreen.xib in Resources */,
+				92AC6CDD1A63C8650049C27D /* 1305_3.jpg in Resources */,
 				92AC6C901A63BB9C0049C27D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +429,7 @@
 				92AC6CA41A63BB9C0049C27D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		92AC6CA51A63BB9C0049C27D /* Build configuration list for PBXNativeTarget "MySecondAppTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +438,7 @@
 				92AC6CA71A63BB9C0049C27D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
